@@ -1,0 +1,5 @@
+venv
+script_with_file.py
+script_with_os_paths.py
+.idea
+.pytest_cache

@@ -1,6 +1,6 @@
 import os
 
-HELLO_ABSPATH = os.path.abspath('hello')
+HELLO_ABSPATH = os.path.c('hello')
 print(HELLO_ABSPATH)
 
 print(os.path.dirname(HELLO_ABSPATH))
