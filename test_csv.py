@@ -4,6 +4,7 @@ from conftest import RESOURCE_PATH
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 
+
 def test_csv():
     with open(os.path.join(RESOURCE_PATH, 'new_csv.csv'), 'w', newline='') as csv_file:
         csvwriter = csv.writer(csv_file, delimiter=';')
