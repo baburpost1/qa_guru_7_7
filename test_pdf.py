@@ -10,11 +10,8 @@ def test_pdf():
     reader = pypdf.PdfReader(os.path.join(RESOURCE_PATH, 'docs-pytest-org-en-latest.pdf'))
     number_of_pages = len(reader.pages)
     first_page = reader.pages[0]
-    text = first_page.extract_text()
     size = os.path.getsize(os.path.join(RESOURCE_PATH, 'docs-pytest-org-en-latest.pdf'))
-    # print(number_of_pages)
-    # print(first_page)
-    # print(text)
+
     print(size)
     count = 0
     for image_file in first_page.images:

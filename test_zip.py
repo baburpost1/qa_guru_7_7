@@ -11,5 +11,4 @@ def test_zip():
             add_zip = os.path.join(RESOURCE_PATH, file)
             zf.write(add_zip, file)
 
-    a = zf.namelist()
     assert zf.namelist() == list_files
